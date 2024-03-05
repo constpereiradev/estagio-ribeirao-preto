@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Fibonacci {
+public class Estagio {
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
         int indice = 13;
@@ -20,7 +20,7 @@ public class Fibonacci {
         System.out.println("Digite o número para verificar se pertence à sequência de Fibonacci: ");
         int numeroInput = scanner.nextInt();
 
-        if(verificarNumero(numeroInput)){
+        if(verificarFibonacci(numeroInput)){
             System.out.println(numeroInput + " pertence à sequência.");
             System.out.println("****************************************");
         }else {
@@ -60,7 +60,7 @@ public class Fibonacci {
         System.out.println("****************************************");
     }
 
-    public static boolean verificarNumero(int numero) {
+    public static boolean verificarFibonacci(int numero) {
         if (numero == 0 || numero == 1){
             return true;
         }
